@@ -2,7 +2,7 @@
  * @Author: dongtaihong 2396203400@qq.com
  * @Date: 2024-06-20 23:56:20
  * @LastEditTime: 2024-06-20 23:56:21
- * @FilePath: /AlgExper/emplanner/include/narrowQp.h
+ * @FilePath: /AlgExper/emplanner/include/st_qp.h
  * @Description:
  */
 #pragma once

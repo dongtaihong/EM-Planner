@@ -1,7 +1,7 @@
 /*
  * @Author: dongtaihong 2396203400@qq.com
  * @Date: 2024-06-16 23:12:51
- * @LastEditTime: 2024-06-24 00:17:18
+ * @LastEditTime: 2024-06-24 20:48:57
  * @FilePath: /AlgExper/common/cartesian_frenet_conversion.cc
  * @Description:
  */
@@ -9,73 +9,8 @@
 
 #include <iostream>
 
-// double NormalizeAngle(const double angle) {
-//   double a = std::fmod(angle + M_PI, 2.0 * M_PI);
-//   if (a < 0) {
-//     a += M_PI;
-//   } else {
-//     a -= M_PI;
-//   }
-//   return a;
-// }
-
-// void getFrenetProjectPoint(
-//     TrajectoryPoint frenet_point,
-//     const std::vector<TrajectoryPoint>& ref_cartesian_path,
-//     TrajectoryPoint& projectPoint) {
-//   int match_index = -1;
-//   for (int i = 0; i < ref_cartesian_path.size() - 1; ++i) {
-//     if (ref_cartesian_path[i].frenet_info.s < frenet_point.frenet_info.s &&
-//         ref_cartesian_path[i + 1].frenet_info.s > frenet_point.frenet_info.s)
-//       match_index = i;
-//   }
-//   if (match_index == -1) return;
-//   TrajectoryPoint match_point = ref_cartesian_path.at(match_index);
-//   Eigen::Vector2d r_n = {match_point.x, match_point.y};
-//   Eigen::Vector2d tao_n = {cos(match_point.global_angle),
-//                            sin(match_point.global_angle)};
-//   double ds = frenet_point.frenet_info.s - match_point.frenet_info.s;
-//   Eigen::Vector2d r_r = r_n + ds * tao_n;
-//   projectPoint.xg = r_r[0];
-//   projectPoint.yg = r_r[1];
-//   projectPoint.global_angle =
-//       match_point.global_angle + ds * match_point.curvature;
-//   projectPoint.curvature = (match_point.curvature +
-//                             ref_cartesian_path.at(match_index + 1).curvature)
-//                             /
-//                            2;
-// }
-
 void FrenetToCartesian(std::vector<TrajectoryPoint>& frenet_path,
                        std::vector<TrajectoryPoint>& ref_cartesian_path) {
-  // TrajectoryPoint project_point;
-  // for (auto& point : frenet_path) {
-  //   getFrenetProjectPoint(point, ref_cartesian_path, project_point);
-  //   Eigen::Vector2d r_r = {project_point.x, project_point.y};
-  //   Eigen::Vector2d tau_r = {cos(project_point.global_angle),
-  //                            sin(project_point.global_angle)};
-  //   Eigen::Vector2d n_r = {-sin(project_point.global_angle),
-  //                          cos(project_point.global_angle)};
-  //   Eigen::Vector2d r_h = r_r + point.frenet_info.l * n_r;
-  //   point.xg = r_h[0];
-  //   point.yg = r_h[1];
-  //   point.global_angle =
-  //       project_point.global_angle +
-  //       atan2(point.frenet_info.l_ds,
-  //             (1 - point.frenet_info.l * project_point.curvature));
-  //   point.global_angle = NormalizeAngle(point.global_angle);
-
-  //   double d_theta = point.global_angle - project_point.global_angle;
-  //   point.curvature =
-  //       ((point.frenet_info.l_dds +
-  //         project_point.curvature * point.frenet_info.l_ds * tan(d_theta)) *
-  //            pow(cos(d_theta), 2) *
-  //            (1 / (1 - project_point.curvature * point.frenet_info.l)) +
-  //        project_point.curvature) *
-  //       cos(d_theta) *
-  //       (1 / (1 - project_point.curvature * point.frenet_info.l));
-  // }
-
   TrajectoryPoint proj_site;
   for (unsigned int iter_frenet = 0; iter_frenet < frenet_path.size();
        ++iter_frenet) {

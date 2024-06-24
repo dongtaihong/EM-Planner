@@ -5,13 +5,6 @@
  * @FilePath: /AlgExper/emplanner/include/st_dp.h
  * @Description:
  */
-/***
- * @Author: dongtaihong 2396203400@qq.com
- * @Date: 2024-06-20 00:00:31
- * @LastEditTime: 2024-06-20 00:00:32
- * @FilePath: /AlgExper/emplanner/include/sl_dp.h
- * @Description:
- */
 #pragma once
 #include <cmath>
 #include <fstream>

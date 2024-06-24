@@ -2,7 +2,7 @@
  * @Author: dongtaihong 2396203400@qq.com
  * @Date: 2024-06-20 23:56:46
  * @LastEditTime: 2024-06-20 23:56:47
- * @FilePath: /AlgExper/emplanner/src/narrowQp.cpp
+ * @FilePath: /AlgExper/emplanner/src/st_qp.cpp
  * @Description:
  */
 #include "../include/st_qp.h"

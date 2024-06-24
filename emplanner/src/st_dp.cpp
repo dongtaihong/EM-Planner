@@ -156,7 +156,6 @@ double DpSpeed::calcNeighborCost(const TrajectoryPoint &start_point,
           obs_cost += 0;
         } else {
           obs_cost += config.w_cost_obs * (36 - distance_min);
-          // std::cout << "cost_obs: " << obs_cost << std::endl;
         }
       }
     }

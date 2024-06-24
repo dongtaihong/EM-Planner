@@ -1,15 +1,8 @@
 /***
  * @Author: dongtaihong 2396203400@qq.com
- * @Date: 2024-06-18 20:08:01
- * @LastEditTime: 2024-06-18 20:08:02
- * @FilePath: /AlgExper/include/sce1 copy.h
- * @Description:
- */
-/***
- * @Author: dongtaihong 2396203400@qq.com
  * @Date: 2024-06-16 23:01:06
  * @LastEditTime: 2024-06-16 23:01:07
- * @FilePath: /AlgExper/include/sce1.h
+ * @FilePath: /AlgExper/include/sce2.h
  * @Description:
  */
 #include "../common/cartesian_frenet_conversion.h"

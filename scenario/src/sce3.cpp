@@ -2,21 +2,7 @@
  * @Author: dongtaihong 2396203400@qq.com
  * @Date: 2024-06-18 21:42:48
  * @LastEditTime: 2024-06-18 21:42:49
- * @FilePath: /AlgExper/src/sce2 copy.cpp
- * @Description:
- */
-/***
- * @Author: dongtaihong 2396203400@qq.com
- * @Date: 2024-06-18 20:08:19
- * @LastEditTime: 2024-06-18 20:08:20
- * @FilePath: /AlgExper/src/sce1 copy.cpp
- * @Description:
- */
-/***
- * @Author: dongtaihong 2396203400@qq.com
- * @Date: 2024-06-16 23:01:14
- * @LastEditTime: 2024-06-16 23:01:15
- * @FilePath: /AlgExper/src/sce1.cpp
+ * @FilePath: /AlgExper/src/sce3.cpp
  * @Description:
  */
 #include "../include/sce3.h"
